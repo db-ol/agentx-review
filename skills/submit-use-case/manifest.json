@@ -1,0 +1,11 @@
+{
+  "name": "submit-use-case",
+  "version": "1.0.0",
+  "owner": "github:review-owner/agentx",
+  "license": "MIT",
+  "stability": "experimental",
+  "description": "OSS-facing channel to share a AgentX use case with the community. Opens a labeled GitHub issue on review-owner/agentx and (CLA-gated) a PR adding docs/community-use-cases/<slug>.md. Validates outcome-framed titles with the same checker as add-use-case.",
+  "provenance": {
+    "source_repo": "https://example.invalid/review-source"
+  }
+}

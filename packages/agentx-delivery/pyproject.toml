@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentx-delivery"
+# Single-sourced from agentx_delivery.__version__ (see [tool.setuptools.dynamic]) so the
+# packaged dist version and the importable __version__ can never drift.
+dynamic = ["version"]
+description = "A channel-neutral local delivery runtime for AI agents: durable task and event transport, plus a transactional-outbox delivery-core library (crash-safe claims, recovery, provider adapters)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "AgentX Platform" }]
+keywords = ["platform", "agent", "relay", "gateway", "matrix", "delivery", "outbox", "runtime"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+]
+# Zero third-party runtime deps — the client is stdlib-only (urllib/json/...).
+dependencies = []
+
+[project.urls]
+Homepage = "https://platform.example.invalid"
+Source = "https://example.invalid/review-source"
+
+[project.scripts]
+agentx-delivery = "agentx_delivery.remote_gateway_bridge:main"
+
+[tool.setuptools]
+packages = ["agentx_delivery"]
+
+[tool.setuptools.dynamic]
+version = { attr = "agentx_delivery.__version__" }

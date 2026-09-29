@@ -1,0 +1,19 @@
+{
+  "name": "skill-usage-report",
+  "version": "1.0.0",
+  "owner": "github:review-owner/agentx",
+  "license": "MIT",
+  "stability": "experimental",
+  "description": "Drain the local skill-usage log and report it to PLATFORM Cloud. Manifest present to DECLARE config per the config-only convention in skills/MANIFEST.md — this skill contributes no inline tools.",
+  "config": {
+    "PLATFORM_CLOUD_ORIGIN": "https://agentx.example.invalid"
+  },
+  "permissions": {
+    "network": true,
+    "filesystem": "read-write",
+    "secrets": ["PLATFORM_CLOUD_TOKEN"]
+  },
+  "provenance": {
+    "source_repo": "https://example.invalid/review-source"
+  }
+}

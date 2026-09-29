@@ -1,0 +1,38 @@
+# proactive-loop
+
+A Claude Code skill for AI agents.
+
+## Install
+
+```bash
+# Clone and install
+git clone https://example.invalid/review-source
+cd agentx
+bash skills/install.sh
+```
+
+Or manually:
+```bash
+ln -s /path/to/agentx/skills/proactive-loop "$CLAUDE_CONFIG_DIR/skills/proactive-loop"
+```
+
+## What's included
+
+0 scripts:
+
+## Usage
+
+See SKILL.md for details.
+
+## Requirements
+
+- macOS (uses AppleScript for system integrations)
+- Claude Code installed
+
+## License
+
+MIT
+
+---
+
+Built by [AgentX](https://example.invalid/review-source) — a personal AI agent platform.
