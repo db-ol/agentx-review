@@ -1,0 +1,11 @@
+{
+  "name": "agentx-migrate",
+  "version": "1.0.0",
+  "owner": "github:REDACTED_OWNER/agentx",
+  "license": "MIT",
+  "stability": "experimental",
+  "description": "M1 Part 2 workspace migration \u2014 guided walkthrough that scans legacy state across sources A (repo-root), B (~/.agentx/workspace/), C ($AGENTX_WORKSPACE env-override), surfaces collisions, gets owner greenlight, commits, verifies, and (if agentx-plus + sync configured) re-routes the vault .git\u2026",
+  "provenance": {
+    "source_repo": "https://github.com/REDACTED_OWNER/agentx"
+  }
+}
